@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike N Go | Get Your Dream Bike !!!</title>
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <!-- DaisyUi and Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-poppins {
+            font-family: "Poppins", serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'color-custom': '#E76F51',
+                        'bg-custom': 'rgba(231, 111, 81, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-poppins">
+    <header class="container mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-2xl font-bold">Bike N Go</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="hover:bg-transparent border-none hover:text-color-custom">Home</a></li>
+                        <li><a class="hover:bg-transparent border-none hover:text-color-custom">Shop</a></li>
+                        <li><a class="hover:bg-transparent border-none hover:text-color-custom">News</a></li>
+                        <li><a class="hover:bg-transparent border-none hover:text-color-custom">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <a
+                        class="btn btn-md bg-color-custom text-white hover:bg-transparent hover:border-color-custom hover:text-color-custom">Log
+                        in</a>
+                </div>
+            </div>
+        </nav>
+        <!-- slider / carousel -->
+        <div class="carousel w-full h-[550px] bg-bg-custom rounded-2xl">
+            <!-- slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="flex flex-col items-center lg:flex-row p-12 lg:p-24">
+                    <!-- slider text -->
+                    <div class="space-y-7 flex-1">
+                        <h1 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+                        <p class="">Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button
+                            class="btn btn-md bg-color-custom text-white hover:bg-transparent hover:border-color-custom hover:text-color-custom">Purchase</button>
+                    </div>
+                    <!-- slider img -->
+                    <div class="flex-1"><img src="assets/slider/bike-1.png" class="w-[400px] mx-auto" /></div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3"
+                        class="btn btn-circle bg-color-custom text-white hover:bg-transparent hover:border-color-custom hover:text-color-custom">❮</a>
+                    <a href="#slide2"
+                        class="btn btn-circle bg-color-custom text-white hover:bg-transparent hover:border-color-custom hover:text-color-custom">❯</a>
+                </div>
+            </div>
+            <!-- slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="flex flex-col items-center lg:flex-row p-12 lg:p-24">
+                    <!-- slider text -->
+                    <div class="space-y-7 flex-1">
+                        <h1 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+                        <p class="">Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button
+                            class="btn btn-md bg-color-custom text-white hover:bg-transparent hover:border-color-custom hover:text-color-custom">Purchase</button>
+                    </div>
+                    <!-- slider img -->
+                    <div class="flex-1"><img src="assets/slider/bike-2.png" class="w-[400px] mx-auto" /></div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1"
+                        class="btn btn-circle bg-color-custom text-white hover:bg-transparent hover:border-color-custom hover:text-color-custom">❮</a>
+                    <a href="#slide3"
+                        class="btn btn-circle bg-color-custom text-white hover:bg-transparent hover:border-color-custom hover:text-color-custom">❯</a>
+                </div>
+            </div>
+            <!-- slide 3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="flex flex-col items-center lg:flex-row p-12 lg:p-24">
+                    <!-- slider text -->
+                    <div class="space-y-7 flex-1">
+                        <h1 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+                        <p class="">Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button
+                            class="btn btn-md bg-color-custom text-white hover:bg-transparent hover:border-color-custom hover:text-color-custom">Purchase</button>
+                    </div>
+                    <!-- slider img -->
+                    <div class="flex-1"><img src="assets/slider/bike-3.png" class="w-[400px] mx-auto" /></div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2"
+                        class="btn btn-circle bg-color-custom text-white hover:bg-transparent hover:border-color-custom hover:text-color-custom">❮</a>
+                    <a href="#slide4"
+                        class="btn btn-circle bg-color-custom text-white hover:bg-transparent hover:border-color-custom hover:text-color-custom">❯</a>
+                </div>
+            </div>
+            <!-- slide 4 -->
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="flex flex-col items-center lg:flex-row p-12 lg:p-24">
+                    <!-- slider text -->
+                    <div class="space-y-7 flex-1">
+                        <h1 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+                        <p class="">Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button
+                            class="btn btn-md bg-color-custom text-white hover:bg-transparent hover:border-color-custom hover:text-color-custom">Purchase</button>
+                    </div>
+                    <!-- slider img -->
+                    <div class="flex-1"><img src="assets/slider/bike-4.png" class="w-[400px] mx-auto" /></div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3"
+                        class="btn btn-circle bg-color-custom text-white hover:bg-transparent hover:border-color-custom hover:text-color-custom">❮</a>
+                    <a href="#slide1"
+                        class="btn btn-circle bg-color-custom text-white hover:bg-transparent hover:border-color-custom hover:text-color-custom">❯</a>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+    <!-- main -->
+    <main class="container mx-auto"></main>
+</body>
+
+
+</html>
